@@ -6,7 +6,6 @@
     <title>Vijay Kandukuri Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -22,33 +21,28 @@
         }
         header h1 { margin: 0; font-size: 2.5em; }
         header p { margin: 5px 0 15px; font-weight: 400; }
-        header .contact-links a {
-            margin: 0 10px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-        }
+        header .contact-links a { margin: 0 10px; color: #fff; text-decoration: none; font-weight: 500; }
         section { padding: 40px 20px; max-width: 900px; margin: auto; }
-        h2 {
-            color: #1E3A8A;
-            border-bottom: 2px solid #1E3A8A;
-            display: inline-block;
-            margin-bottom: 20px;
+        h2 { color: #1E3A8A; border-bottom: 2px solid #1E3A8A; display: inline-block; margin-bottom: 20px; }
+        .project-card, .certificate-card { background: #fff; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        footer { text-align: center; padding: 15px; background: #1E3A8A; color: #fff; }
+        a { color: #1E3A8A; text-decoration: none; }
+
+        /* Certificates Gallery */
+        .certificates-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
-        .project-card {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 15px;
+        .certificates-gallery img {
+            max-width: 250px;
+            border: 2px solid #1E3A8A;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #1E3A8A;
-            color: #fff;
-        }
-        a { color: #1E3A8A; text-decoration: none; }
+        .certificates-gallery img:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
@@ -103,6 +97,22 @@
         <h2>Skills</h2>
         <p><strong>Technical:</strong> Python, C, HTML, CSS, JavaScript, VS Code, Canva, GitHub</p>
         <p><strong>Personal:</strong> Quick Learner, Hardworking, Communication, Creative Thinking, Teamwork</p>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificates-gallery">
+            <a href="https://via.placeholder.com/600x400.png?text=Certificate+1" target="_blank">
+                <img src="https://via.placeholder.com/250x150.png?text=Certificate+1" alt="Certificate 1">
+            </a>
+            <a href="https://via.placeholder.com/600x400.png?text=Certificate+2" target="_blank">
+                <img src="https://via.placeholder.com/250x150.png?text=Certificate+2" alt="Certificate 2">
+            </a>
+            <a href="https://via.placeholder.com/600x400.png?text=Certificate+3" target="_blank">
+                <img src="https://via.placeholder.com/250x150.png?text=Certificate+3" alt="Certificate 3">
+            </a>
+        </div>
     </section>
 
     <!-- Contact -->
